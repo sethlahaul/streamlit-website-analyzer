@@ -8,6 +8,7 @@ A Streamlit application that analyzes websites for SEO, conversion optimization,
 - **Conversion Optimization**: Analyzes buttons, forms, and calls-to-action (CTAs)
 - **Performance Analysis**: Evaluates JavaScript files, CSS files, images, and page size
 - **Mobile-Friendliness**: Checks viewport meta tag and responsive design elements
+- **Lighthouse Analysis**: Provides detailed performance metrics using Google Lighthouse automatically when analyzing a website (requires Node.js and Chrome)
 
 ## Installation
 
@@ -44,8 +45,15 @@ streamlit run app.py
 - Requests
 - BeautifulSoup4
 
+### Optional Requirements for Lighthouse Analysis
+
+- Node.js (for running Lighthouse)
+- Google Chrome (required by Lighthouse)
+- npm or npx (comes with Node.js)
+
 ## Notes
 
 - The tool provides a basic analysis and recommendations for website improvement
-- Performance analysis is based on simple metrics and does not require Lighthouse
+- Basic performance analysis is available without any additional requirements
+- Detailed performance analysis using Lighthouse requires Node.js and Chrome to be installed
 - All analysis is done client-side without storing any data
